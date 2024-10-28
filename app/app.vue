@@ -18,9 +18,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt UI Pro - SaaS template',
-  ogImage: 'https://saas-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
+  titleTemplate: '%s - Luther Books',
+  ogImage: 'https://luther-books.vercel.app/social-card.png',
+  twitterImage: 'https://luther-books.vercel.app/social-card.png',
   twitterCard: 'summary_large_image'
 })
 </script>

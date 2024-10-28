@@ -52,58 +52,17 @@ useSeoMeta({
       </template>
     </ULandingHero>
 
-    <ULandingSection class="!pt-0">
-      <ImagePlaceholder />
-    </ULandingSection>
-
     <ULandingSection
-      v-for="(section, index) in page.sections"
-      :key="index"
-      :title="section.title"
-      :description="section.description"
-      :align="section.align"
-      :features="section.features"
-    >
-      <ImagePlaceholder />
-    </ULandingSection>
-
-    <ULandingSection
-      :title="page.features.title"
-      :description="page.features.description"
+      :title="page.projects.title"
+      :links="page.projects.links"
     >
       <UPageGrid>
         <ULandingCard
-          v-for="(item, index) in page.features.items"
+          v-for="(item, index) of page.projects.items"
           :key="index"
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection>
-
-    <ULandingSection
-      :headline="page.testimonials.headline"
-      :title="page.testimonials.title"
-      :description="page.testimonials.description"
-    >
-      <UPageColumns class="xl:columns-4">
-        <div
-          v-for="(testimonial, index) in page.testimonials.items"
-          :key="index"
-          class="break-inside-avoid"
-        >
-          <ULandingTestimonial
-            v-bind="testimonial"
-            class="bg-gray-100/50 dark:bg-gray-800/50"
-          />
-        </div>
-      </UPageColumns>
-    </ULandingSection>
-
-    <ULandingSection>
-      <ULandingCTA
-        v-bind="page.cta"
-        class="bg-gray-100/50 dark:bg-gray-800/50"
-      />
     </ULandingSection>
   </div>
 </template>

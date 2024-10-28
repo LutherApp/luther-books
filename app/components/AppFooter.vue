@@ -1,36 +1,17 @@
 <script setup lang="ts">
 const links = [{
-  label: 'Resources',
+  label: 'Menu',
   children: [{
-    label: 'Help center'
+    label: 'Docs',
+    to: '/docs/getting-started'
   }, {
-    label: 'Docs'
+    label: 'Books',
+    to: '/books'
   }, {
-    label: 'Roadmap'
+    label: 'Blog',
+    to: '/blog'
   }, {
     label: 'Changelog'
-  }]
-}, {
-  label: 'Features',
-  children: [{
-    label: 'Affiliates'
-  }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
-  }]
-}, {
-  label: 'Company',
-  children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
   }]
 }]
 

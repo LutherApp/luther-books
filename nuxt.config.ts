@@ -30,7 +30,9 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/',
-        '/docs'
+        '/docs',
+        '/books',
+        '/blog'
       ],
       crawlLinks: true
     }
@@ -46,7 +48,8 @@ export default defineNuxtConfig({
   },
 
   typescript: {
-    strict: false
+    strict: false,
+    typeCheck: true
   },
 
   future: {
