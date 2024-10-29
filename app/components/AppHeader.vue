@@ -19,7 +19,7 @@ const links = [{
   <UHeader :links="links">
     <template #logo>
       Luther Books <UBadge
-        label="SaaS"
+        label="App"
         variant="subtle"
         class="mb-0.5"
       />

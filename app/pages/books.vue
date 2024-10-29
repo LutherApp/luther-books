@@ -102,90 +102,97 @@ const rows = [
   },
   {
     id: 10,
-    title: 'The Formula of Concord',
+    title: 'Book of Concord',
+    description: 'With numbered sections (BEST)',
+    note: 'html',
+    url: 'https://thebookofconcord.org/three-universal-or-ecumenical-creeds/'
+  },
+  {
+    id: 11,
+    title: 'The Book of Concord',
     description: 'bookofconcord.org',
     note: 'html',
     url: 'https://bookofconcord.org/'
   },
   {
-    id: 11,
+    id: 12,
     title: 'Christian Dogmatics',
     description: 'Mueller´ version of Pieper´ work',
     note: 'markdown',
     url: 'https://christian-dogmatics.vercel.app'
   },
   {
-    id: 12,
+    id: 13,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. I',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/christliche-dogmatik-vol-1-2023-10-31-deep-l-en-no-highlight/mode/2up'
   },
   {
-    id: 13,
+    id: 14,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. II',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/pieper-cdk-2-001-672-deep-l-en/mode/2up'
   },
   {
-    id: 14,
+    id: 15,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. III',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/cdk-vol-3-deep-l-en-corrected-2023-11-28-no-shading/mode/2up'
   },
   {
-    id: 15,
+    id: 16,
     title: 'Church Postil',
     description: 'Complete (one file)',
     note: 'pdf',
     url: 'https://www.lutheranlibrary.org/pdf/504-luther-church-postil-complete.pdf'
   },
   {
-    id: 16,
+    id: 17,
     title: 'Church Postil (Da & Eng)',
     description: 'www.lutherdansk.dk',
     note: 'html/pdf',
     url: 'http://www.lutherdansk.dk/KP%20-%20enkeltpr%C3%A6dikener/KP%20-%20Forside%20med%20indeks/index.htm'
   },
   {
-    id: 17,
+    id: 18,
     title: 'Church Postil',
     description: 'Advents Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-advent%20engelsk-KP/default.htm'
   },
   {
-    id: 18,
+    id: 19,
     title: 'Church Postil',
     description: 'Christmas Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-Julepostillen%20AM/default.htm'
   },
   {
-    id: 19,
+    id: 20,
     title: 'Church Postil',
     description: 'Lent Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-Fastepostillen%20AM/index.htm'
   },
   {
-    id: 20,
+    id: 21,
     title: 'Church Postil',
     description: 'Summer Postil (Easter)',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-sommerpostillen%20AM/default.htm'
   },
   {
-    id: 21,
+    id: 22,
     title: 'Church Postil',
     description: 'Trinity Postil I (Early Autumn)',
     note: 'html',
     url: 'http://www.lutherdansk.dk/1%20Web-AM%20-%20Trinity%201-12/index.htm'
   },
   {
-    id: 22,
+    id: 23,
     title: 'Church Postil',
     description: 'Trinity Postil II (Late Autumn)',
     note: 'html',
