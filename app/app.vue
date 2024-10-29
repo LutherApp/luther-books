@@ -19,8 +19,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - Luther Books',
-  ogImage: 'https://luther-books.vercel.app/social-card.png',
-  twitterImage: 'https://luther-books.vercel.app/social-card.png',
+  ogImage: 'https://luther-books.vercel.app/png-picture-0003.png',
+  twitterImage: 'https://luther-books.vercel.app/png-picture-0003.png',
   twitterCard: 'summary_large_image'
 })
 </script>

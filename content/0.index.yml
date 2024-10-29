@@ -1,5 +1,5 @@
 title: Luther Books
-description: Luther-Books.vercel.app is based on a open source app containing lutheran resources, e.g; books and links to external sources.
+description: Overview of Luther Books and resources on net, with responsive design made by @LutherApp
 navigation: false
 hero:
   title: Luther Books
@@ -32,14 +32,24 @@ projects:
       target: '_blank'
       size: lg
   items:
-    - title: 'Christian Dogmatics'
-      description: 'Teaching book about Christian Dogmatics'
-      icon: 'i-heroicons-academic-cap'
-      to: 'https://luther-books.vercel.app'
-      target: '_blank'
-    - title: 'Church-Postil'
-      description: 'Church-Postil by Dr. Martin Luther.'
+    - title: 'Luther Books'
+      description: 'Luther Books with overview of the best resource sites on net.'
       icon: 'i-heroicons-book-open'
       to: '/books'
+      target: '_blank'
+    - title: 'St. Louis Edition of Luther´ work'
+      description: 'The best resource site for Luther´ work'
+      icon: 'i-heroicons-academic-cap'
+      to: 'https://backtoluther.blogspot.com/2022/04/st-louis-edition-digitized-text-now-in.html'
+      target: '_blank'
+    - title: 'Book of Concord'
+      description: 'A very good version with numbered sections'
+      icon: 'i-heroicons-academic-cap'
+      to: 'https://thebookofconcord.org/three-universal-or-ecumenical-creeds/'
+      target: '_blank'
+    - title: 'Christian Dogmatics'
+      description: 'Mueller´ version of Pieper´ work'
+      icon: 'i-heroicons-academic-cap'
+      to: 'https://christian-dogmatics.vercel.app'
       target: '_blank'
     
