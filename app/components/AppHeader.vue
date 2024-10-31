@@ -7,11 +7,11 @@ const links = [{
   label: 'Docs',
   to: '/docs'
 }, {
+  label: 'Search',
+  to: '/search'
+}, {
   label: 'Books',
   to: '/books'
-}, {
-  label: 'Blog',
-  to: '/blog'
 }]
 </script>
 

@@ -1,19 +1,19 @@
 title: Luther Books
-description: Overview of Luther Books and resources on net, with responsive design made by @LutherApp
+description: Overview of Luther Books and resources on net, with responsive design - made by @LutherApp
 navigation: false
 hero:
   title: Luther Books
-  description: Read in Jesu name the word of God in the Catechism, Church-Postil and other lutheran books, to strengthen the Holy Spirit, that we got from God our Father, when we was baptist in faith to our saviour and brother, Jesus Christ.
+  description: Overview of the best lutheran resource sites in the www, including some of the most important lutheran books, in markdown format, with responsive design and advanced search functionality - for modern lutherans.
   headline:
     label: An app from @LutherApp
     to: https://github.com/LutherApp
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Docs
-      to: '/docs'
+    - label: Search
+      to: '/search'
       size: xl
       color: black
-      icon: i-heroicons-arrow-right-20-solid
+      icon: i-heroicons-magnifying-glass
       trailing: true
     - label: Books
       icon: i-heroicons-book-open-solid
@@ -32,10 +32,10 @@ projects:
       target: '_blank'
       size: lg
   items:
-    - title: 'Luther Books'
-      description: 'Luther Books with overview of the best resource sites on net.'
+    - title: 'Search'
+      description: 'Search for the best lutheran resource sites on net.'
       icon: 'i-heroicons-book-open'
-      to: '/books'
+      to: '/search'
       target: '_blank'
     - title: 'St. Louis Edition of Luther´ work'
       description: 'The best resource site for Luther´ work'
@@ -44,12 +44,12 @@ projects:
       target: '_blank'
     - title: 'Book of Concord'
       description: 'A very good version with numbered sections'
-      icon: 'i-heroicons-academic-cap'
+      icon: 'i-heroicons-academic-cap-solid'
       to: 'https://thebookofconcord.org/three-universal-or-ecumenical-creeds/'
       target: '_blank'
     - title: 'Christian Dogmatics'
       description: 'Mueller´ version of Pieper´ work'
-      icon: 'i-heroicons-academic-cap'
+      icon: 'i-heroicons-queue-list'
       to: 'https://christian-dogmatics.vercel.app'
       target: '_blank'
     
