@@ -5,11 +5,11 @@ const links = [{
     label: 'Docs',
     to: '/docs/getting-started'
   }, {
+    label: 'Search',
+    to: '/search'
+  }, {
     label: 'Books',
     to: '/books'
-  }, {
-    label: 'Blog',
-    to: '/blog'
   }, {
     label: 'Changelog'
   }]

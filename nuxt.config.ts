@@ -31,8 +31,8 @@ export default defineNuxtConfig({
       routes: [
         '/',
         '/docs',
-        '/books',
-        '/blog'
+        '/search',
+        '/books'
       ],
       crawlLinks: true
     }
