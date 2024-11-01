@@ -26,7 +26,7 @@ function onSubmit() {
   setTimeout(() => {
     toast.add({
       title: 'Subscribed!',
-      description: 'You\'ve been subscribed to our newsletter.'
+      description: 'Sorry! This future is not ready yet!' // 'You\'ve been subscribed to our newsletter.'
     })
 
     loading.value = false

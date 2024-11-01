@@ -25,6 +25,7 @@ const links = [{
       />
     </template>
 
+    <!--
     <template #right>
       <UButton
         label="Sign in"
@@ -40,6 +41,7 @@ const links = [{
         class="hidden lg:flex"
       />
     </template>
+    -->
 
     <template #panel>
       <UNavigationTree
