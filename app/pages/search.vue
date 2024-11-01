@@ -74,125 +74,181 @@ const rows = [
   },
   {
     id: 6,
-    title: 'Small catechism',
-    description: 'luther-books.vercel.app',
-    note: 'markdown',
-    url: '../books/the-small-catechism'
-  },
-  {
-    id: 7,
-    title: 'Small catechism (by lcms)',
-    description: 'cph.org',
-    note: 'html',
-    url: 'https://catechism.cph.org/'
-  },
-  {
-    id: 8,
-    title: 'The 95 Theses',
-    description: 'luther-books.vercel.app',
-    note: 'markdown',
-    url: '../books/the-95-theses'
-  },
-  {
-    id: 9,
     title: 'The Book of Concord',
     description: 'www.lutheranlibrary.org',
     note: 'pdf',
     url: 'https://www.lutheranlibrary.org/pdf/250-jacobs-book-of-concord.pdf'
   },
   {
-    id: 10,
+    id: 7,
     title: 'Book of Concord',
     description: 'With numbered sections (BEST)',
     note: 'html',
     url: 'https://thebookofconcord.org/three-universal-or-ecumenical-creeds/'
   },
   {
-    id: 11,
+    id: 8,
     title: 'The Book of Concord',
     description: 'bookofconcord.org',
     note: 'html',
     url: 'https://bookofconcord.org/'
   },
   {
-    id: 12,
+    id: 9,
     title: 'Christian Dogmatics',
     description: 'Mueller´ version of Pieper´ work',
     note: 'markdown',
     url: 'https://christian-dogmatics.vercel.app'
   },
   {
-    id: 13,
+    id: 10,
+    title: 'Christian Dogmatics',
+    description: 'archive.org',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/muellerchristiandogmatics/mode/2up'
+  },
+  {
+    id: 11,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. I',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/christliche-dogmatik-vol-1-2023-10-31-deep-l-en-no-highlight/mode/2up'
   },
   {
-    id: 14,
+    id: 12,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. II',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/pieper-cdk-2-001-672-deep-l-en/mode/2up'
   },
   {
-    id: 15,
+    id: 13,
     title: 'Dr. Piepers Christian Dogmatics',
     description: 'Vol. III',
     note: 'pdf/txt etc.',
     url: 'https://archive.org/details/cdk-vol-3-deep-l-en-corrected-2023-11-28-no-shading/mode/2up'
   },
   {
-    id: 16,
-    title: 'Church Postil',
-    description: 'Complete (one file)',
+    id: 14,
+    title: 'Dr. Francis Pieper`s Christian Dogmatics Study Guide',
+    description: 'CSLScholar',
     note: 'pdf',
-    url: 'https://www.lutheranlibrary.org/pdf/504-luther-church-postil-complete.pdf'
+    url: 'https://scholar.csl.edu/christiandogmatics/'
+  },
+  {
+    id: 15,
+    title: 'The doctrinal theology of the Evangelical Lutheran Church',
+    description: 'Schmid, Heinrich',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/doctrinaltheolog00schmuoft'
+  },
+  {
+    id: 16,
+    title: 'Concordia Triglotta',
+    description: 'St. Louis (1921)',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/concordiatriglot0000unse/mode/2up'
   },
   {
     id: 17,
+    title: 'Historical Introductions to Concordia Triglotta',
+    description: 'F. Bente (1921)',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/bente-historical-introductions-triglotta-from-ocr2/mode/1up'
+  },
+  {
+    id: 18,
+    title: 'Systematic Theology Vol 1',
+    description: 'Charles Hodge (1872)',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/systematic-theology-vol-1/mode/2up'
+  },
+  {
+    id: 19,
+    title: 'Systematic Theology Vol 2',
+    description: 'Charles Hodge (1872)',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/systematic-theology-vol-2/mode/2up'
+  },
+  {
+    id: 20,
+    title: 'Systematic Theology Vol 3',
+    description: 'Charles Hodge (1872)',
+    note: 'pdf/txt etc.',
+    url: 'https://archive.org/details/systematictheolo014257mbp/mode/2up'
+  },
+  {
+    id: 21,
+    title: 'Index of Parts, Chapters, Members, Sections, and Questions',
+    description: 'Johannes Andreas Quenstedt (1528–1590)',
+    note: 'pdf',
+    url: 'https://trhalvorson.com/wp-content/uploads/2023/04/Quenstedt_Index.pdf'
+  },
+  {
+    id: 22,
+    title: 'Small catechism',
+    description: 'luther-books.vercel.app',
+    note: 'markdown',
+    url: '../books/the-small-catechism'
+  },
+  {
+    id: 23,
+    title: 'Small catechism (by lcms)',
+    description: 'cph.org',
+    note: 'html',
+    url: 'https://catechism.cph.org/'
+  },
+  {
+    id: 24,
+    title: 'The 95 Theses',
+    description: 'luther-books.vercel.app',
+    note: 'markdown',
+    url: '../books/the-95-theses'
+  },
+  {
+    id: 25,
     title: 'Church Postil (Da & Eng)',
     description: 'www.lutherdansk.dk',
     note: 'html/pdf',
     url: 'http://www.lutherdansk.dk/KP%20-%20enkeltpr%C3%A6dikener/KP%20-%20Forside%20med%20indeks/index.htm'
   },
   {
-    id: 18,
+    id: 26,
     title: 'Church Postil',
     description: 'Advents Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-advent%20engelsk-KP/default.htm'
   },
   {
-    id: 19,
+    id: 27,
     title: 'Church Postil',
     description: 'Christmas Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-Julepostillen%20AM/default.htm'
   },
   {
-    id: 20,
+    id: 28,
     title: 'Church Postil',
     description: 'Lent Postil',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-Fastepostillen%20AM/index.htm'
   },
   {
-    id: 21,
+    id: 29,
     title: 'Church Postil',
     description: 'Summer Postil (Easter)',
     note: 'html',
     url: 'http://www.lutherdansk.dk/Web-sommerpostillen%20AM/default.htm'
   },
   {
-    id: 22,
+    id: 30,
     title: 'Church Postil',
     description: 'Trinity Postil I (Early Autumn)',
     note: 'html',
     url: 'http://www.lutherdansk.dk/1%20Web-AM%20-%20Trinity%201-12/index.htm'
   },
   {
-    id: 23,
+    id: 31,
     title: 'Church Postil',
     description: 'Trinity Postil II (Late Autumn)',
     note: 'html',
