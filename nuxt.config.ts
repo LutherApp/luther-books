@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
 
   modules: [
+    [resolve('./modules/copy-image-files'), { cleanFolders: ['public/article'] }],
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
