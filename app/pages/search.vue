@@ -1,302 +1,258 @@
-<script setup lang="ts">
-const { data: page } = await useAsyncData('search', () => queryContent('/search').findOne())
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
-
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImageComponent('Saas')
-
-/**
- * Table
- * Source:
- * https://ui.nuxt.com/components/table
- */
-
+<script lang="ts" setup>
+// Columns
 const columns = [{
+  key: 'id',
+  label: '#',
+  sortable: true
+}, {
   key: 'title',
   label: 'Title',
-  sortable: true,
-  direction: 'desc' as const
+  sortable: true
 }, {
-  key: 'description',
-  label: 'Description',
-  sortable: true,
-  direction: 'desc' as const
+  key: 'completed',
+  label: 'Status',
+  sortable: true
 }, {
-  key: 'note',
-  label: 'Note',
-  sortable: true,
-  direction: 'desc' as const
+  key: 'actions',
+  label: 'Actions',
+  sortable: false
 }]
 
-const rows = [
-  {
-    id: 1,
-    title: 'Dr. Martin Luthers Werke (Ger)',
-    description: 'Weimar Edition',
-    note: 'pdf/doc/flip',
-    url: 'http://www.lutherdansk.dk/WA/D.%20Martin%20Luthers%20Werke,%20Weimarer%20Ausgabe%20-%20WA.htm#ab3'
-  },
-  {
-    id: 2,
-    title: 'St. Louis Edition of Luther´ work',
-    description: 'All 25 volumes on archive.org',
-    note: 'pdf/doc/txt etc.',
-    url: 'https://backtoluther.blogspot.com/2022/04/st-louis-edition-digitized-text-now-in.html'
-  },
-  {
-    id: 3,
-    title: '63 of 82 volums online',
-    description: 'annas-archive.org',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Martin%20Luther%20in%20English.htm'
-  },
-  {
-    id: 4,
-    title: 'Sermons, Commentary & other Works',
-    description: 'godrules.net/library/luther',
-    note: 'html',
-    url: 'https://godrules.net/library/luther/luther.htm'
-  },
-  {
-    id: 5,
-    title: 'Search for Luther on hathitrust.org',
-    description: 'hathitrust.org',
-    note: 'html',
-    url: 'https://catalog.hathitrust.org/Search/Home?adv=1&setft=true&ft=ft&lookfor%5B%5D=Luther%2C+Martin%2C+1483-1546.&type%5B%5D=author&fqor-language%5B%5D=English'
-  },
-  {
-    id: 6,
-    title: 'The Book of Concord',
-    description: 'www.lutheranlibrary.org',
-    note: 'pdf',
-    url: 'https://www.lutheranlibrary.org/pdf/250-jacobs-book-of-concord.pdf'
-  },
-  {
-    id: 7,
-    title: 'Book of Concord',
-    description: 'With numbered sections (BEST)',
-    note: 'html',
-    url: 'https://thebookofconcord.org/three-universal-or-ecumenical-creeds/'
-  },
-  {
-    id: 8,
-    title: 'The Book of Concord',
-    description: 'bookofconcord.org',
-    note: 'html',
-    url: 'https://bookofconcord.org/'
-  },
-  {
-    id: 9,
-    title: 'Christian Dogmatics',
-    description: 'Mueller´ version of Pieper´ work',
-    note: 'markdown',
-    url: 'https://christian-dogmatics.vercel.app'
-  },
-  {
-    id: 10,
-    title: 'Christian Dogmatics',
-    description: 'archive.org',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/muellerchristiandogmatics/mode/2up'
-  },
-  {
-    id: 11,
-    title: 'Dr. Piepers Christian Dogmatics',
-    description: 'Vol. I',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/christliche-dogmatik-vol-1-2023-10-31-deep-l-en-no-highlight/mode/2up'
-  },
-  {
-    id: 12,
-    title: 'Dr. Piepers Christian Dogmatics',
-    description: 'Vol. II',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/pieper-cdk-2-001-672-deep-l-en/mode/2up'
-  },
-  {
-    id: 13,
-    title: 'Dr. Piepers Christian Dogmatics',
-    description: 'Vol. III',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/cdk-vol-3-deep-l-en-corrected-2023-11-28-no-shading/mode/2up'
-  },
-  {
-    id: 14,
-    title: 'Dr. Francis Pieper`s Christian Dogmatics Study Guide',
-    description: 'CSLScholar',
-    note: 'pdf',
-    url: 'https://scholar.csl.edu/christiandogmatics/'
-  },
-  {
-    id: 15,
-    title: 'The doctrinal theology of the Evangelical Lutheran Church',
-    description: 'Schmid, Heinrich',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/doctrinaltheolog00schmuoft'
-  },
-  {
-    id: 16,
-    title: 'Concordia Triglotta',
-    description: 'St. Louis (1921)',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/concordiatriglot0000unse/mode/2up'
-  },
-  {
-    id: 17,
-    title: 'Historical Introductions to Concordia Triglotta',
-    description: 'F. Bente (1921)',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/bente-historical-introductions-triglotta-from-ocr2/mode/1up'
-  },
-  {
-    id: 18,
-    title: 'Systematic Theology Vol 1',
-    description: 'Charles Hodge (1872)',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/systematic-theology-vol-1/mode/2up'
-  },
-  {
-    id: 19,
-    title: 'Systematic Theology Vol 2',
-    description: 'Charles Hodge (1872)',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/systematic-theology-vol-2/mode/2up'
-  },
-  {
-    id: 20,
-    title: 'Systematic Theology Vol 3',
-    description: 'Charles Hodge (1872)',
-    note: 'pdf/txt etc.',
-    url: 'https://archive.org/details/systematictheolo014257mbp/mode/2up'
-  },
-  {
-    id: 21,
-    title: 'Index of Parts, Chapters, Members, Sections, and Questions',
-    description: 'Johannes Andreas Quenstedt (1528–1590)',
-    note: 'pdf',
-    url: 'https://trhalvorson.com/wp-content/uploads/2023/04/Quenstedt_Index.pdf'
-  },
-  {
-    id: 22,
-    title: 'Small catechism',
-    description: 'luther-books.vercel.app',
-    note: 'markdown',
-    url: '../books/the-small-catechism'
-  },
-  {
-    id: 23,
-    title: 'Small catechism (by lcms)',
-    description: 'cph.org',
-    note: 'html',
-    url: 'https://catechism.cph.org/'
-  },
-  {
-    id: 24,
-    title: 'The 95 Theses',
-    description: 'luther-books.vercel.app',
-    note: 'markdown',
-    url: '../books/the-95-theses'
-  },
-  {
-    id: 25,
-    title: 'Church Postil (Da & Eng)',
-    description: 'www.lutherdansk.dk',
-    note: 'html/pdf',
-    url: 'http://www.lutherdansk.dk/KP%20-%20enkeltpr%C3%A6dikener/KP%20-%20Forside%20med%20indeks/index.htm'
-  },
-  {
-    id: 26,
-    title: 'Church Postil',
-    description: 'Advents Postil',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Web-advent%20engelsk-KP/default.htm'
-  },
-  {
-    id: 27,
-    title: 'Church Postil',
-    description: 'Christmas Postil',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Web-Julepostillen%20AM/default.htm'
-  },
-  {
-    id: 28,
-    title: 'Church Postil',
-    description: 'Lent Postil',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Web-Fastepostillen%20AM/index.htm'
-  },
-  {
-    id: 29,
-    title: 'Church Postil',
-    description: 'Summer Postil (Easter)',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Web-sommerpostillen%20AM/default.htm'
-  },
-  {
-    id: 30,
-    title: 'Church Postil',
-    description: 'Trinity Postil I (Early Autumn)',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/1%20Web-AM%20-%20Trinity%201-12/index.htm'
-  },
-  {
-    id: 31,
-    title: 'Church Postil',
-    description: 'Trinity Postil II (Late Autumn)',
-    note: 'html',
-    url: 'http://www.lutherdansk.dk/Web-Trinitatis%20AM/index.htm'
-  }
-]
+const selectedColumns = ref(columns)
+const columnsTable = computed(() => columns.filter(column => selectedColumns.value.includes(column)))
 
-const selected = ref([rows[1]])
+// Selected Rows
+const selectedRows = ref([])
 
-async function openUrl(row) {
-  const index = selected.value.findIndex((item) => item.id === row.id)
+function select(row) {
+  const index = selectedRows.value.findIndex(item => item.id === row.id)
   if (index === -1) {
-    selected.value.push(row)
-    await navigateTo(row.url, { open: { target: '_blank' } })
+    selectedRows.value.push(row)
   } else {
-    selected.value.splice(index, 1)
-    await navigateTo(row.url, { open: { target: '_blank' } })
+    selectedRows.value.splice(index, 1)
   }
 }
 
-const q = ref('')
+// Actions
+const actions = [
+  [{
+    key: 'completed',
+    label: 'Completed',
+    icon: 'i-heroicons-check'
+  }], [{
+    key: 'uncompleted',
+    label: 'In Progress',
+    icon: 'i-heroicons-arrow-path'
+  }]
+]
 
-const filterRows = computed(() => {
-  if (!q.value) {
-    return rows
+// Filters
+const todoStatus = [{
+  key: 'uncompleted',
+  label: 'In Progress',
+  value: false
+}, {
+  key: 'completed',
+  label: 'Completed',
+  value: true
+}]
+
+const search = ref('')
+const selectedStatus = ref([])
+const searchStatus = computed(() => {
+  if (selectedStatus.value?.length === 0) {
+    return ''
   }
 
-  return rows.filter((rows) => {
-    return Object.values(rows).some((value) => {
-      return String(value).toLowerCase().includes(q.value.toLowerCase())
-    })
-  })
+  if (selectedStatus?.value?.length > 1) {
+    return `?completed=${selectedStatus.value[0].value}&completed=${selectedStatus.value[1].value}`
+  }
+
+  return `?completed=${selectedStatus.value[0].value}`
+})
+
+const resetFilters = () => {
+  search.value = ''
+  selectedStatus.value = []
+}
+
+// Pagination
+const sort = ref({ column: 'id', direction: 'asc' as const })
+const page = ref(1)
+const pageCount = ref(10)
+const pageTotal = ref(200) // This value should be dynamic coming from the API
+const pageFrom = computed(() => (page.value - 1) * pageCount.value + 1)
+const pageTo = computed(() => Math.min(page.value * pageCount.value, pageTotal.value))
+
+// Data
+
+
+const { data: todos, status } = await useLazyAsyncData<{
+  id: number
+  title: string
+  completed: string // https://jsonplaceholder.typicode.com/todos${searchStatus.value}
+}[]>('todos', () => ($fetch as any)(`/api/jsondata1.table${searchStatus.value}`, {
+  query: {
+    q: search.value,
+    _page: page.value,
+    _limit: pageCount.value,
+    _sort: sort.value.column,
+    _order: sort.value.direction
+  }
+}), {
+  default: () => [],
+  watch: [page, search, searchStatus, pageCount, sort]
+})
+
+const expand = ref({
+  openedRows: [],
+  row: null
 })
 </script>
 
 <template>
-  <div v-if="page">
-    <ULandingSection>
-      <UInput
-        v-model="q"
-        placeholder="Filter books..."
-      />
+  <UCard
+    class="w-full"
+    :ui="{
+      base: '',
+      ring: '',
+      divide: 'divide-y divide-gray-200 dark:divide-gray-700',
+      header: { padding: 'px-4 py-5' },
+      body: { padding: '', base: 'divide-y divide-gray-200 dark:divide-gray-700' },
+      footer: { padding: 'p-4' }
+    }"
+  >
+    <template #header>
+      <h2 class="font-semibold text-xl text-gray-900 dark:text-white leading-tight">
+        Todos
+      </h2>
+    </template>
 
-      <UTable
-        :columns="columns"
-        :rows="filterRows"
-        @select="openUrl"
-      />
-    </ULandingSection>
-  </div>
+    <!-- Filters -->
+    <div class="flex items-center justify-between gap-3 px-4 py-3">
+      <UInput v-model="search" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Search..." />
+
+      <USelectMenu v-model="selectedStatus" :options="todoStatus" multiple placeholder="Status" class="w-40" />
+    </div>
+
+    <!-- Header and Action buttons -->
+    <div class="flex justify-between items-center w-full px-4 py-3">
+      <div class="flex items-center gap-1.5">
+        <span class="text-sm leading-5">Rows per page:</span>
+
+        <USelect
+          v-model="pageCount"
+          :options="[3, 5, 10, 20, 30, 40]"
+          class="me-2 w-20"
+          size="xs"
+        />
+      </div>
+
+      <div class="flex gap-1.5 items-center">
+        <UDropdown v-if="selectedRows.length > 1" :items="actions" :ui="{ width: 'w-36' }">
+          <UButton
+            icon="i-heroicons-chevron-down"
+            trailing
+            color="gray"
+            size="xs"
+          >
+            Mark as
+          </UButton>
+        </UDropdown>
+
+        <USelectMenu v-model="selectedColumns" :options="columns" multiple>
+          <UButton
+            icon="i-heroicons-view-columns"
+            color="gray"
+            size="xs"
+          >
+            Columns
+          </UButton>
+        </USelectMenu>
+
+        <UButton
+          icon="i-heroicons-funnel"
+          color="gray"
+          size="xs"
+          :disabled="search === '' && selectedStatus.length === 0"
+          @click="resetFilters"
+        >
+          Reset
+        </UButton>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <UTable
+      v-model:expand="expand"
+      v-model:sort="sort"
+      :rows="todos"
+      :columns="columnsTable"
+      :loading="status === 'pending'"
+      sort-asc-icon="i-heroicons-arrow-up"
+      sort-desc-icon="i-heroicons-arrow-down"
+      sort-mode="manual"
+      class="w-full"
+      :ui="{ td: { base: 'max-w-[0] truncate' }, default: { checkbox: { color: 'gray' as any } } }"
+      @select="select"
+    >
+      <template #completed-data="{ row }">
+        <UBadge size="xs" :label="row.completed ? 'Completed' : 'In Progress'" :color="row.completed ? 'emerald' : 'orange'" variant="subtle" />
+      </template>
+
+      <template #actions-data="{ row }">
+        <UButton
+          v-if="!row.completed"
+          icon="i-heroicons-check"
+          size="2xs"
+          color="emerald"
+          variant="outline"
+          :ui="{ rounded: 'rounded-full' }"
+          square
+        />
+
+        <UButton
+          v-else
+          icon="i-heroicons-arrow-path"
+          size="2xs"
+          color="orange"
+          variant="outline"
+          :ui="{ rounded: 'rounded-full' }"
+          square
+        />
+      </template>
+    </UTable>
+
+    <!-- Number of rows & Pagination -->
+    <template #footer>
+      <div class="flex flex-wrap justify-between items-center">
+        <div>
+          <span class="text-sm leading-5">
+            Showing
+            <span class="font-medium">{{ pageFrom }}</span>
+            to
+            <span class="font-medium">{{ pageTo }}</span>
+            of
+            <span class="font-medium">{{ pageTotal }}</span>
+            results
+          </span>
+        </div>
+        <!--  :total="pageTotal" -->
+        <UPagination
+          v-model="page"
+          :page-count="pageCount"
+          :total="pageTotal"
+          :ui="{
+            wrapper: 'flex items-center gap-1',
+            rounded: '!rounded-full min-w-[32px] justify-center',
+            default: {
+              activeButton: {
+                variant: 'outline'
+              }
+            }
+          }"
+        />
+      </div>
+    </template>
+  </UCard>
 </template>
