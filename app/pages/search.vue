@@ -54,7 +54,7 @@ const columns = [
   },
   {
     key: 'format',
-    label: 'format',
+    label: 'Format',
     sortable: true,
     direction: 'desc' as const
   },
@@ -72,13 +72,27 @@ const selectedColumns = ref([...columns])
 
 const selected = ref([rows[1]])
 
+const closeElement = useCloseElement()
+
 /**
  * This function is necessary and have to be combined with setTimeout below.
  */
 function elementTarget(event) {
   clickElement.value = event.target.tagName
+
+  // toggle rows (only one row open at a time)
+  const buttonParent = event.target.closest('button')
+  buttonParent.classList.toggle('openButton')
+  const clickedButtons = document.getElementsByClassName('openButton')
+  if (clickedButtons.length < 2) {
+    closeElement.value = event.target
+  } else {
+    closeElement.value.click()
+    closeElement.value = event.target
+  }
+
   // console.log(event.target.tagName + ' is clicked and saved; with use of composable useClickElement.')
-  // timeout need to be added before this value is saved and can be used of the next function.
+  // timeout need to be added (below) before this value is saved and can be used of the next function.
 }
 
 function openUrl(row) {
@@ -87,9 +101,11 @@ function openUrl(row) {
     if (clickElement.value == 'TD') {
       if (index === -1) {
         selected.value.push(row)
+        console.log('first if is: ' + index)
         navigateTo(row.url, { open: { target: '_blank' } })
       } else {
         selected.value.splice(index, 1)
+        console.log('else if is: ' + index)
         navigateTo(row.url, { open: { target: '_blank' } })
       }
     }
