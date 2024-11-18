@@ -243,14 +243,34 @@
     "id": 25,
     "tag": "Postil",
     "category": "Overview",
+    "title": "Church Postil (Eng/Ger/Ned)",
+    "description": "martinlutherpostil.com",
+    "format": "html",
+    "url": "https://martinlutherpostil.com",
+    "note": "Overview of Church Postil"
+  },
+  {
+    "id": 26,
+    "tag": "Postil",
+    "category": "Overview",
+    "title": "Church Postil (Eng)",
+    "description": "www.lutheranlibrary.org",
+    "format": "pdf",
+    "url": "https://www.lutheranlibrary.org/504-luther-church-postil-complete/",
+    "note": "Church Postil in one file"
+  },
+  {
+    "id": 27,
+    "tag": "Postil",
+    "category": "Overview",
     "title": "Church Postil (Da & Eng)",
     "description": "www.lutherdansk.dk",
     "format": "html/pdf",
     "url": "http://www.lutherdansk.dk/KP%20-%20enkeltpr%C3%A6dikener/KP%20-%20Forside%20med%20indeks/index.htm",
-    "note": "Overview of Church Postil in Danish and English"
+    "note": "Overview of Church Postil"
   },
   {
-    "id": 26,
+    "id": 28,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -260,7 +280,7 @@
     "note": "First part of the Church Postil"
   },
   {
-    "id": 27,
+    "id": 29,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -270,7 +290,7 @@
     "note": "Second part of the Church Postil"
   },
   {
-    "id": 28,
+    "id": 30,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -280,7 +300,7 @@
     "note": "Third part of the Church Postil"
   },
   {
-    "id": 29,
+    "id": 31,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -290,7 +310,7 @@
     "note": "Four part of the Church Postil"
   },
   {
-    "id": 30,
+    "id": 32,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -300,7 +320,7 @@
     "note": "Fifth part of the Church Postil"
   },
   {
-    "id": 31,
+    "id": 33,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",

@@ -182,13 +182,13 @@ const expand = ref({
         <template #expand="{ row }">
           <div class="p-4">
             <!-- <pre>{{ row }}</pre> -->
-            <pre>Tag:         {{ row.tag }}</pre>
-            <pre>Category:    {{ row.category }}</pre>
             <pre>Title:       {{ row.title }}</pre>
             <pre>Description: {{ row.description }}</pre>
             <pre>Format:      {{ row.format }}</pre>
-            <pre>Url:         <a :href="row.url" target="_blank">{{ row.url }}</a></pre>
             <pre>Note:        {{ row.note }}</pre>
+            <pre>Url:         <a :href="row.url" target="_blank">{{ row.url }}</a></pre>
+            <pre>Tag:         {{ row.tag }}</pre>
+            <pre>Category:    {{ row.category }}</pre>
           </div>
         </template>
       </UTable>

@@ -3,7 +3,7 @@ const links = [{
   label: 'Menu',
   children: [{
     label: 'Docs',
-    to: '/docs/getting-started'
+    to: '/docs/about'
   }, {
     label: 'Search',
     to: '/search'
