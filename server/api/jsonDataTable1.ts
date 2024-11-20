@@ -56,16 +56,6 @@ export default defineEventHandler(async (event) => {
     "id": 6,
     "tag": "Lutheran",
     "category": "Doctrine",
-    "title": "The Book of Concord",
-    "description": "www.lutheranlibrary.org",
-    "format": "pdf",
-    "url": "https://www.lutheranlibrary.org/pdf/250-jacobs-book-of-concord.pdf",
-    "note": "This site is not used by Kyrie"
-  },
-  {
-    "id": 7,
-    "tag": "Lutheran",
-    "category": "Doctrine",
     "title": "Book of Concord",
     "description": "With numbered sections (BEST)",
     "format": "html",
@@ -73,7 +63,7 @@ export default defineEventHandler(async (event) => {
     "note": "The best version of the Book of Concord on net."
   },
   {
-    "id": 8,
+    "id": 7,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Book of Concord",
@@ -83,7 +73,27 @@ export default defineEventHandler(async (event) => {
     "note": "A third net site with The Book of Concord"
   },
   {
+    "id": 8,
+    "tag": "Lutheran",
+    "category": "Doctrine",
+    "title": "Book of Concord",
+    "description": "archive.org",
+    "format": "txt, pdf etc.",
+    "url": "https://archive.org/details/thebookofconcord00unknuoft",
+    "note": "Very good with txt, pdf etc."
+  },
+  {
     "id": 9,
+    "tag": "Lutheran",
+    "category": "Doctrine",
+    "title": "The Book of Concord",
+    "description": "www.lutheranlibrary.org",
+    "format": "pdf",
+    "url": "https://www.lutheranlibrary.org/pdf/250-jacobs-book-of-concord.pdf",
+    "note": "By Henry Eyster Jacobs"
+  },
+  {
+    "id": 10,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Concordia Triglotta",
@@ -93,7 +103,7 @@ export default defineEventHandler(async (event) => {
     "note": "Concordia in German Latin & English"
   },
   {
-    "id": 10,
+    "id": 11,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Historical Introductions to Concordia Triglotta",
@@ -103,7 +113,7 @@ export default defineEventHandler(async (event) => {
     "note": ""
   },
   {
-    "id": 11,
+    "id": 12,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Christian Dogmatics",
@@ -113,7 +123,7 @@ export default defineEventHandler(async (event) => {
     "note": "The most modern net site of this book."
   },
   {
-    "id": 12,
+    "id": 13,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Christian Dogmatics",
@@ -123,7 +133,7 @@ export default defineEventHandler(async (event) => {
     "note": "The original book"
   },
   {
-    "id": 13,
+    "id": 14,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Dr. Piepers Christian Dogmatics",
@@ -133,7 +143,7 @@ export default defineEventHandler(async (event) => {
     "note": "Pieper, vol I"
   },
   {
-    "id": 14,
+    "id": 15,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Dr. Piepers Christian Dogmatics",
@@ -143,7 +153,7 @@ export default defineEventHandler(async (event) => {
     "note": "Pieper, vol II"
   },
   {
-    "id": 15,
+    "id": 16,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Dr. Piepers Christian Dogmatics",
@@ -153,7 +163,7 @@ export default defineEventHandler(async (event) => {
     "note": "Pieper, vol III"
   },
   {
-    "id": 16,
+    "id": 17,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Dr. Francis Piepers Christian Dogmatics Study Guide",
@@ -163,7 +173,7 @@ export default defineEventHandler(async (event) => {
     "note": "Study Guide to Pieper"
   },
   {
-    "id": 17,
+    "id": 18,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "The doctrinal theology of the Evangelical Lutheran Church",
@@ -173,7 +183,7 @@ export default defineEventHandler(async (event) => {
     "note": "Pieper is referring a lot to this book"
   },
   {
-    "id": 18,
+    "id": 19,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 1",
@@ -183,7 +193,7 @@ export default defineEventHandler(async (event) => {
     "note": "Hodge, vol I"
   },
   {
-    "id": 19,
+    "id": 20,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 2",
@@ -193,7 +203,7 @@ export default defineEventHandler(async (event) => {
     "note": "Hodge, vol II"
   },
   {
-    "id": 20,
+    "id": 21,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 3",
@@ -203,7 +213,7 @@ export default defineEventHandler(async (event) => {
     "note": "Hodge, vol III"
   },
   {
-    "id": 21,
+    "id": 22,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Index of Parts, Chapters, Members, Sections, and Questions",
@@ -213,7 +223,7 @@ export default defineEventHandler(async (event) => {
     "note": "Quenstedt - The first 'dogmatican' after Luther"
   },
   {
-    "id": 22,
+    "id": 23,
     "tag": "Luther",
     "category": "Books",
     "title": "Small catechism",
@@ -223,7 +233,7 @@ export default defineEventHandler(async (event) => {
     "note": "Luthers small Catechism"
   },
   {
-    "id": 23,
+    "id": 24,
     "tag": "Luther",
     "category": "Books",
     "title": "Small catechism (by lcms)",
@@ -233,7 +243,7 @@ export default defineEventHandler(async (event) => {
     "note": "LCMS net version of the small catechism"
   },
   {
-    "id": 24,
+    "id": 25,
     "tag": "Luther",
     "category": "Writings",
     "title": "The 95 Theses",
@@ -243,7 +253,7 @@ export default defineEventHandler(async (event) => {
     "note": "The 95 Theses in MD format"
   },
   {
-    "id": 25,
+    "id": 26,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Eng/Ger/Ned)",
@@ -253,7 +263,7 @@ export default defineEventHandler(async (event) => {
     "note": "Overview of Church Postil"
   },
   {
-    "id": 26,
+    "id": 27,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Eng)",
@@ -263,7 +273,7 @@ export default defineEventHandler(async (event) => {
     "note": "Church Postil in one file"
   },
   {
-    "id": 27,
+    "id": 28,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Da & Eng)",
@@ -273,7 +283,7 @@ export default defineEventHandler(async (event) => {
     "note": "Overview of Church Postil"
   },
   {
-    "id": 28,
+    "id": 29,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -283,7 +293,7 @@ export default defineEventHandler(async (event) => {
     "note": "First part of the Church Postil"
   },
   {
-    "id": 29,
+    "id": 30,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -293,7 +303,7 @@ export default defineEventHandler(async (event) => {
     "note": "Second part of the Church Postil"
   },
   {
-    "id": 30,
+    "id": 31,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -303,7 +313,7 @@ export default defineEventHandler(async (event) => {
     "note": "Third part of the Church Postil"
   },
   {
-    "id": 31,
+    "id": 32,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -313,7 +323,7 @@ export default defineEventHandler(async (event) => {
     "note": "Four part of the Church Postil"
   },
   {
-    "id": 32,
+    "id": 33,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -323,7 +333,7 @@ export default defineEventHandler(async (event) => {
     "note": "Fifth part of the Church Postil"
   },
   {
-    "id": 33,
+    "id": 34,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
