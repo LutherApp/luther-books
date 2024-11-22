@@ -14,19 +14,19 @@ export default defineEventHandler(async (event) => {
   },
   {
     "id": 2,
-    "tag": "Eng",
-    "category": "Overview",
-    "title": "St. Louis Edition of Luther´ work",
-    "description": "All 25 volumes on archive.org",
-    "format": "pdf/doc/txt etc.",
-    "url": "https://backtoluther.blogspot.com/2022/04/st-louis-edition-digitized-text-now-in.html",
-    "note": "Very good"
+    "tag": "St-Louis-Edition",
+    "category": "All-Writings",
+    "title": "St. Louis Edition of Luther's work",
+    "description": "luthers-works.vercel.app",
+    "format": "md, html",
+    "url": "https://luthers-works.vercel.app",
+    "note": "Best site with search functionality."
   },
   {
     "id": 3,
     "tag": "Eng",
     "category": "Overview",
-    "title": "63 of 82 volums online",
+    "title": "63 of 82 volumes online",
     "description": "annas-archive.org",
     "format": "html",
     "url": "http://www.lutherdansk.dk/Martin%20Luther%20in%20English.htm",
@@ -342,6 +342,6 @@ export default defineEventHandler(async (event) => {
     "url": "http://www.lutherdansk.dk/Web-Trinitatis%20AM/index.htm",
     "note": "Sixth part of the Church Postil"
   }
-]  
+] 
   `
 })

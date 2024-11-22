@@ -11,13 +11,13 @@
   },
   {
     "id": 2,
-    "tag": "Eng",
-    "category": "Overview",
-    "title": "St. Louis Edition of Luther´ work",
-    "description": "archive.org/ hathitrust.org",
-    "format": "pdf/doc/txt etc.",
-    "url": "https://backtoluther.blogspot.com/2022/04/st-louis-edition-digitized-text-now-in.html",
-    "note": "Very good"
+    "tag": "St-Louis-Edition",
+    "category": "All-Writings",
+    "title": "St. Louis Edition of Luther's work",
+    "description": "luthers-works.vercel.app",
+    "format": "md, html",
+    "url": "https://luthers-works.vercel.app",
+    "note": "Best site with search functionality."
   },
   {
     "id": 3,
