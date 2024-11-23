@@ -5,7 +5,7 @@ hero:
   title: Luther Books
   description: Overview of the best lutheran resource sites in the www, including some of the most important lutheran books, in markdown format, with responsive design and advanced search functionality - for modern lutherans.
   headline:
-    label: An app from @LutherApp
+    label: An App from @LutherApp
     to: https://github.com/LutherApp
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:

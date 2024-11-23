@@ -18,7 +18,11 @@ const links = computed(() => navigation.value.find(item => item._path === '/docs
             />
           </template>
 
-          <UNavigationTree :links="mapContentNavigation(links)" />
+          <UNavigationTree
+            :links="mapContentNavigation(links)"
+            :multiple="false"
+            default-open
+          />
         </UAside>
       </template>
 
