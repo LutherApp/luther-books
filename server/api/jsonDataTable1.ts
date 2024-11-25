@@ -2,7 +2,7 @@ export default defineEventHandler(async (event) => {
   appendHeader(event, 'Content-Type', 'application/json')
   return `
 [
-  {
+   {
     "id": 1,
     "tag": "Ger",
     "category": "Overview",
@@ -14,9 +14,9 @@ export default defineEventHandler(async (event) => {
   },
   {
     "id": 2,
-    "tag": "St-Louis-Edition",
+    "tag": "Walch Edition 2",
     "category": "All-Writings",
-    "title": "St. Louis Edition of Luther's work",
+    "title": "Revised Walch Edition of Luther's work",
     "description": "luthers-works.vercel.app",
     "format": "md, html",
     "url": "https://luthers-works.vercel.app",
