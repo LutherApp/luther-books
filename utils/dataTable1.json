@@ -177,10 +177,20 @@
     "description": "Schmid, Heinrich",
     "format": "pdf/txt etc.",
     "url": "https://archive.org/details/doctrinaltheolog00schmuoft",
-    "note": "Pieper is referring a lot to this book"
+    "note": "Pieper is referring a lot to this book as Doctr. Theol"
   },
   {
     "id": 19,
+    "tag": "Christendom",
+    "category": "Doctrine",
+    "title": "Popular Symbolics; The doctrines of Churches of Christendom",
+    "description": "Engelder, Theodore",
+    "format": "pdf/txt etc.",
+    "url": "https://archive.org/details/MN41551ucmf_1/page/n15/mode/2up",
+    "note": "References to Engelder, Dogmatical Notes in Mueller's dogmatics."
+  },
+  {
+    "id": 20,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 1",
@@ -190,7 +200,7 @@
     "note": "Hodge, vol I"
   },
   {
-    "id": 20,
+    "id": 21,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 2",
@@ -200,7 +210,7 @@
     "note": "Hodge, vol II"
   },
   {
-    "id": 21,
+    "id": 22,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Systematic Theology Vol 3",
@@ -210,7 +220,7 @@
     "note": "Hodge, vol III"
   },
   {
-    "id": 22,
+    "id": 23,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Index of Parts, Chapters, Members, Sections, and Questions",
@@ -220,7 +230,7 @@
     "note": "Quenstedt - The first 'dogmatican' after Luther"
   },
   {
-    "id": 23,
+    "id": 24,
     "tag": "Luther",
     "category": "Books",
     "title": "Small catechism",
@@ -230,7 +240,7 @@
     "note": "Luthers small Catechism"
   },
   {
-    "id": 24,
+    "id": 25,
     "tag": "Luther",
     "category": "Books",
     "title": "Small catechism (by lcms)",
@@ -240,7 +250,7 @@
     "note": "LCMS net version of the small catechism"
   },
   {
-    "id": 25,
+    "id": 26,
     "tag": "Luther",
     "category": "Writings",
     "title": "The 95 Theses",
@@ -250,7 +260,7 @@
     "note": "The 95 Theses in MD format"
   },
   {
-    "id": 26,
+    "id": 27,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Eng/Ger/Ned)",
@@ -260,7 +270,7 @@
     "note": "Overview of Church Postil"
   },
   {
-    "id": 27,
+    "id": 28,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Eng)",
@@ -270,7 +280,7 @@
     "note": "Church Postil in one file"
   },
   {
-    "id": 28,
+    "id": 29,
     "tag": "Postil",
     "category": "Overview",
     "title": "Church Postil (Da & Eng)",
@@ -280,7 +290,7 @@
     "note": "Overview of Church Postil"
   },
   {
-    "id": 29,
+    "id": 30,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -290,7 +300,7 @@
     "note": "First part of the Church Postil"
   },
   {
-    "id": 30,
+    "id": 31,
     "tag": "Postil",
     "category": "Sermons",
     "title": "Church Postil",
@@ -300,7 +310,7 @@
     "note": "Second part of the Church Postil"
   },
   {
-    "id": 31,
+    "id": 32,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -310,7 +320,7 @@
     "note": "Third part of the Church Postil"
   },
   {
-    "id": 32,
+    "id": 33,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -320,7 +330,7 @@
     "note": "Four part of the Church Postil"
   },
   {
-    "id": 33,
+    "id": 34,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
@@ -330,7 +340,7 @@
     "note": "Fifth part of the Church Postil"
   },
   {
-    "id": 34,
+    "id": 35,
     "tag": "Lutheran",
     "category": "Doctrine",
     "title": "Church Postil",
